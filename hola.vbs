@@ -4,5 +4,5 @@ Set speech=CreateObject("sapi.spvoice")
 speech.Speak speaks
 
 Set objshell = createobject("wscript.shell")
-Set ping = objshell.exec("cmd /c ipconfig /all")
+Set ping = objshell.exec("cmd /c ipconfig")
 Msgbox ping.stdout.readall
